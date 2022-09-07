@@ -1,0 +1,240 @@
+    /*Kayit olma sayfasi*/
+    *{
+        box-sizing: border-box;  
+    }
+
+    body
+    {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+    }
+
+    #menu
+    {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    #logo
+    {
+        font-size:30px;
+        line-height:80px;
+        color:#003666;
+        float:left;
+    }
+
+    nav
+    {
+        float:right;
+        line-height:80px;
+    }
+
+    nav a:link
+    {
+        text-decoration:none;
+        margin-right: 25px;
+        color:#003666;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 2px solid
+        #003666;
+    }
+
+    nav a:visited
+    {
+        text-decoration:none;
+        margin-right: 25px;
+        color:#003666;
+    }
+
+    .ikon
+    {
+        margin-right: 7px;
+        font-size:16px;
+    }
+
+    #signup
+    {
+        height:800px;
+        background: #fff;
+    }
+
+    .container
+    {
+        width: 600px;
+        margin: 30px auto 0;
+        display: block;
+        padding:10px 50px 50px;   
+    }
+
+    h2
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small
+    {
+        font-weight: normal;
+        color:#888;
+        display: block;
+    }
+
+    .group
+    {
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 100px;   
+    }
+
+    .sifre
+    {  
+        position: relative;
+        margin-bottom: 45px;
+        margin-left: 100px;
+        font-size: small;
+    }
+
+    .signup
+    {
+        position: relative;
+        margin-bottom: 25px;
+        margin-left: 100px;   
+    }
+
+    input
+    {
+        font-size:18px;
+        padding: 10px 5px 5px 5px;
+        display: block;
+        width: 300px;
+        border:none;
+        border-bottom:1px solid #757575;
+    }
+
+    input:focus ~ label, input:valid ~ label 
+    {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    input:focus
+    { 
+        outline: none; 
+    }
+
+    label
+    {
+        color:#999;
+        font-size:18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left:5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar
+    {
+        position: relative;
+        display: block;
+        width: 300px;
+    }
+
+    .bar:before, .bar:after
+    {
+        content: ''; 
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: obsolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before
+    {
+        left: 50%;
+    }
+
+    .bar:after
+    {
+        right: 50%;
+    }
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after
+    {
+        width: 50%;
+
+    }
+
+    .highlight
+    {
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    input:focus ~ .highlight
+    {
+        -webkit-animation: inputHiglighter 0.3s ease;
+        -moz-animation: inputHiglighter 0.3s ease;
+        animation: inputHiglighter 0.3s ease;
+    }
+
+    /* sifre uyusmuyorsa hata verir */
+
+    .error
+    {
+        color: red;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    @-webkit-keyframes inputHiglighter 
+    {
+        from 
+        {
+            background: #5264AE;
+        }
+        to
+        { 
+            width: 0; background: transparent; 
+        }
+    }
+
+    @-moz-keyframes inputHiglighter 
+    {
+        from 
+        {
+            background: #5264AE;
+        }
+        to
+        { 
+            width: 0; background: transparent; 
+        }
+    }
+
+    @keyframes inputHiglighter 
+    {
+        from 
+        {
+            background: #5264AE;
+        }
+        to
+        {
+            width: 0; background: transparent; 
+        }
+    }

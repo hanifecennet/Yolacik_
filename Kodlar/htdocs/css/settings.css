@@ -1,0 +1,119 @@
+/* ayarlar sayfasi */    
+    *{
+        box-sizing: border-box;  
+    }
+    
+    body
+    {  
+        font-family: 'Nunito', sans-serif;
+        margin: 0; 
+    }
+
+    #menu
+    {
+        height: 70px;
+        padding: 0 20px; 
+    }
+
+    #logo
+    {
+        font-size:38px;
+        line-height:32px;
+        color:#003666;
+        float:left;
+    }
+
+    nav
+    {
+        float:right; 
+        line-height:80px;
+    }
+
+    nav a:link
+    {
+        text-decoration:none; 
+        margin-right: 25px; 
+        color:#003666;
+    }
+
+    nav a:hover
+    { 
+        border-bottom: 2px solid
+        #003666;
+    }
+
+    nav a:visited
+    {
+        text-decoration:none;
+        margin-right: 25px;
+        color:#003666;
+    }
+
+    .ikon
+    {     
+        margin-right: 7px; 
+        font-size:16px;
+    }
+
+    small
+    {
+        font-size: 20px;
+    }
+
+    .container
+    {
+        width: 600px;
+        margin: 30px auto 0;
+        display: block;
+        padding:10px 50px 50px;   
+    }
+
+    h2
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .group
+    {
+        position: relative;
+        margin-bottom: 35px;
+        margin-left: 100px;   
+    }
+
+    .update /*güncelle butonları*/
+    {
+        position: relative;
+        margin-bottom: 25px;
+        margin-left: 100px;   
+    }
+
+    input /* içerik */
+    { 
+        font-size:18px;
+        padding: 10px 5px 5px 5px;
+        display: block;
+        width: 300px;
+        border-style: solid;
+        border-color: slategray;
+        border-width: 1px;
+    }
+
+    label
+    {
+        color:rgb(32, 29, 31);
+        font-size:16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        top: -22px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    #file
+    {
+        border-style: none;
+        margin-top: -25px;
+    }
